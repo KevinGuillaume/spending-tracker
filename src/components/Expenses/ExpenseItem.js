@@ -1,6 +1,6 @@
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 /**
  * Component that is used to render the expense data
  * data that includes the amount of the expense,name of the expense, and date
@@ -8,6 +8,7 @@ import Card from "./Card";
  * @returns expense item component
  */
 function ExpenseItem(props) {
+  
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
